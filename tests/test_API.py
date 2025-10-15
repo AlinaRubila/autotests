@@ -2,6 +2,7 @@ import requests
 
 api_url = "https://reqres.in/api"
 
+@pytest.fixture
 def test_get():
     user_id = 1
     h = {"x-api-key": "reqres-free-v1"}
