@@ -19,11 +19,11 @@ jobs:
         python-version: '3.12'
 
     - name: Install dependencies
-      run: |
+      run:
         pip install --upgrade setuptools wheel
         pip install pytest
 	pip install requests
 
     - name: Run tests using Pytest
-      run: |
+      run:
         pytest
